@@ -14,6 +14,7 @@ spelling error - don't correct - highlight incorrecly spelled word
 
  If not a string - general error 'Input is not a string'
 
- Input                     |  Output
- spell_checker("String")       "String"
- spell_checker("Srting")    | "~Srting~"
+ Input                             |  Output
+ spell_checker("String")              "String"
+ spell_checker("Srting")            | "~Srting~"
+ spell_checker("Srting and Nmber")   | "~Srting~ and Number"
