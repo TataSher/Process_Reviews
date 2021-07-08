@@ -10,4 +10,8 @@ describe '#spell_checker' do
   it 'returns a string with a highlighted error' do
     expect(spell_checker("Srting and Number")).to eq("~Srting~ and Number")
   end
+  it 'highlights an error if upper or lower cases are used' do
+    expect(spell_checker("string and Number")).to eq("string and Number")
+  end
+    
 end
