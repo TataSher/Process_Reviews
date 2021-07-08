@@ -16,3 +16,4 @@ spelling error - don't correct - highlight incorrecly spelled word
 
  Input                     |  Output
  spell_checker("String")       "String"
+ spell_checker("Srting")    | "~Srting~"
