@@ -13,5 +13,7 @@ describe '#spell_checker' do
   it 'highlights an error if upper or lower cases are used' do
     expect(spell_checker("string and Number")).to eq("string and Number")
   end
-    
+  it 'raises error if the input is not a string' do 
+    expect{ spell_checker(5) }.to raise_error('Input is not a string')
+  end   
 end
