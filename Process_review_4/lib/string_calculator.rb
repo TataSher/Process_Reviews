@@ -1,9 +1,8 @@
 def string_calculator(string)
-  sum = string.split(" ")
-  new_sum = []
-  sum = sum.map do |value|
+new_sum = []
+ string.split(" ").map do |value|
     if value != '+' 
-      new_sum << value.to_i
+      new_sum << value.to_f
     end
   end
   [ string, new_sum.sum ]
