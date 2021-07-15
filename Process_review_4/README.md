@@ -11,7 +11,9 @@ extracted sum string for us and evaluated result
 
 Input                             |   Output
 string_calculator("1" )           |   ["1", 1.0]
-"1 + 1"                           |   ["1 + 1", 2.0]      
+string_calculator("1 + 1")        |   ["1 + 1", 2.0]      
 "1 + 1 + 1"                       |   ["1 + 1 + 1", 3.0]     
 "1.1 + 1.11"                      |   ["1.1 + 1.11", 1.21 ]
 "string"                          |   [MathError "Input must be a valid mathematical string separated by spaces"]
+"1+1"                             |   [MathError "Input must be a valid mathematical string separated by spaces"]
+
