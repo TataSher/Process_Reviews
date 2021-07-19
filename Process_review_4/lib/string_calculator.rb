@@ -1,9 +1,20 @@
 def string_calculator(string)
-new_sum = []
- string.split(" ").map do |value|
-    if value != '+' 
-      new_sum << value.to_f
-    end
+  integer_array = string.split(' ').map do |value|
+    value.to_i 
   end
-  [ string, new_sum.sum ]
+  [ string, integer_array.sum]
 end
+
+
+
+# def string_calculator(string)
+#   array = string.split(' ')
+
+# new_sum = []
+#  string.split(" ").map do |value|
+#     if value != '+' 
+#       new_sum << value.to_f
+#     end
+#   end
+#   [ string, sum.sum ]
+# end
