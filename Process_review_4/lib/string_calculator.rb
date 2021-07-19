@@ -1,20 +1,15 @@
 def string_calculator(string)
+  check_numbers(string)
   integer_array = string.split(' ').map do |value|
-    value.to_i 
+    value.to_f
   end
   [ string, integer_array.sum]
 end
 
+private
 
-
-# def string_calculator(string)
-#   array = string.split(' ')
-
-# new_sum = []
-#  string.split(" ").map do |value|
-#     if value != '+' 
-#       new_sum << value.to_f
-#     end
-#   end
-#   [ string, sum.sum ]
-# end
+def check_numbers(string)
+  if string.count('0-9') == 0
+    raise "Input must be a valid mathematical string separated by spaces"
+  end
+end
