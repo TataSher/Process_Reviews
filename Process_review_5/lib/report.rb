@@ -6,6 +6,6 @@ class Report
   end
 
   def add_result(test_result)
-   @log = test_result.split(', ')
+   @log << test_result.split(', ')
   end
 end
