@@ -8,12 +8,14 @@ class Report
   end
 
   def add_result(test_result)
-    if test_result === 'Green' 
-      @green = @green + 1
-    elsif test_result === 'Amber'
-      @amber = @amber + 1
-    elsif test_result === 'Red'
-      @red = @red + 1
+    test_result.split(', ').each do |mark|
+      if mark === 'Green' 
+        @green += 1
+      elsif mark === 'Amber'
+        @amber += 1
+      elsif mark === 'Red'
+        @red += 1
+      end
     end
   end
   
